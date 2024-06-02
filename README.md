@@ -7,6 +7,7 @@ In my project, you will find two folders:
 2. hello-app:  It contains all the yaml files.
 
 Link for the code repository
+https://github.com/adityashukla4774/aditya-devops-nagp
 
 Docker hub URL for docker images
 https://hub.docker.com/repository/docker/adityadockerhub7447/adi-db-app/tags
