@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-deployment
+  namespace: default
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: adi-db-app
+  template:
+    metadata:
+      labels:
+        app: adi-db-app
+    spec:
+      containers:
+      - name: adi-db-app
+        image: us-west1-docker.pkg.dev/aditya-nagp-kubernetes-424010/adi-repo/adi-db-app:v1
+        ports:
+        - containerPort: 8080
+        env:
+        - name: DB_HOST
+          value: postgres.default.svc.cluster.local
+        - name: DB_PORT
+          value: "5432"
+        - name: DB_NAME
+          value: mydatabase
+        - name: DB_USER
+          value: postgres
+        - name: DB_PASS
+          value: securepass
+        resources:
+          requests:
+            cpu: "50m"
+          limits:
+            cpu: "200m"
