@@ -27,3 +27,4 @@ URL to check if the API is ready
 http://34.82.240.252:32080/ready
 
 Link for screen recording video showing everything mentioned above.
+https://nagarro-my.sharepoint.com/:u:/r/personal/aditya_shukla_nagarro_com/Documents/Aditya%20Shukla_3153685_Kubernetes%20and%20DevOps%20Advanced.zip?csf=1&web=1&e=DAGBDR
